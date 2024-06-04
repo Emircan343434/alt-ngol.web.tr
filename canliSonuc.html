@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puan Durumu</title>
+    <link rel="stylesheet" href="canliSonuc.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .hero {
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(./images/arkaPlan.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .title {
+        color: white;
+        font-size: 28px;
+      }
+      span {
+        color: #ea1538;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        padding: 27px 70px;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+      }
+      ul li {
+        margin: 5px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      ul li a:hover {
+        color: #ea1538;
+        transition: 0.6s ease;
+      }
+      body {
+        overflow: hidden;
+      }
+      .container {
+        height: 85vh;
+        padding: 5px 50px 5px 50px;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        height: 5vh;
+        padding-bottom: 7px;
+      }
+      #tik {
+        color: #ea1538;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <h2 class="title">
+          <a href="index.html" style="text-decoration: none; color: white"
+            >Altın <span>GOL</span></a
+          >
+        </h2>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="puanDurumu.html">Puan Durumu</a></li>
+          <li><a href="canliSonuc.html" id="tik">Canlı Sonuçlar</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+        <a href="index.html">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+        </a>
+      </nav>
+      <div class="container">
+        <div
+          class=""
+          style="background-color: #272727; position: fixed; z-index: 999"
+        >
+          <h1 style="padding: 5px 250px">
+            37 / 38.Hafta - Süper Lig Maç Sonuçları
+          </h1>
+        </div>
+        <table style="margin-top: 47px">
+          <thead>
+            <tr>
+              <th>Saat</th>
+              <th></th>
+              <th>Ev Sahibi Takım</th>
+              <th>Sonuç</th>
+              <th>Misafir Takım</th>
+              <th>İlk Yarı Son</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                colspan="7"
+                style="
+                  background-color: #272727;
+                  color: white;
+                  font-weight: bold;
+                "
+              >
+                17 Mayıs 2024 - Cuma
+              </td>
+            </tr>
+            <tr>
+              <td>17:00</td>
+              <td>MS</td>
+              <td>İstanbulspor</td>
+              <td id="sonuc">1 - 3</td>
+              <td class="yenen">EMS Yapı Sivasspor</td>
+              <td>0 - 2</td>
+            </tr>
+            <tr>
+              <td>20:00</td>
+              <td>MS</td>
+              <td class="yenen">Bitexen Antalyaspor</td>
+              <td id="sonuc">2 - 1</td>
+              <td>Yukatel Adana Demirspor</td>
+              <td>1 - 0</td>
+            </tr>
+            <tr>
+              <td
+                colspan="7"
+                style="
+                  background-color: #272727;
+                  color: white;
+                  font-weight: bold;
+                "
+              >
+                18 Mayıs 2024 - Cumartesi
+              </td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td class="yenen">Gaziantep FK</td>
+              <td id="sonuc">3 - 1</td>
+              <td>VavaCars Fatih Karagümrük</td>
+              <td>0 - 0</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>Rams Başakşehir</td>
+              <td id="sonuc">0 - 1</td>
+              <td class="yenen">Trabzonspor</td>
+              <td>0 - 1</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>Beşiktaş</td>
+              <td id="sonuc">2 - 2</td>
+              <td>Atakaş Hatayspor</td>
+              <td>0 - 1</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>MKE Ankaragücü</td>
+              <td id="sonuc">0 - 0</td>
+              <td>Siltaş Yapı Pendikspor</td>
+              <td>0 - 0</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>Çaykur Rizespor</td>
+              <td id="sonuc">0 - 0</td>
+              <td>Kasımpaşa</td>
+              <td>0 - 0</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>Yılport Samsunspor</td>
+              <td id="sonuc">1 - 1</td>
+              <td>Corendon Alanyaspor</td>
+              <td>0 - 1</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>Mondihome Kayserispor</td>
+              <td id="sonuc">2 - 2</td>
+              <td>Tümosan Konyaspor</td>
+              <td>1 - 1</td>
+            </tr>
+            <tr>
+              <td
+                colspan="7"
+                style="
+                  background-color: #272727;
+                  color: white;
+                  font-weight: bold;
+                "
+              >
+                19 Mayıs 2024 - Pazar
+              </td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>Galatasaray</td>
+              <td id="sonuc">0 - 1</td>
+              <td class="yenen">Fenerbahçe</td>
+              <td>0 - 0</td>
+            </tr>
+            <tr>
+              <td
+                colspan="7"
+                style="
+                  background-color: #272727;
+                  color: white;
+                  font-weight: bold;
+                "
+              >
+                24 Mayıs 2024 - Cuma
+              </td>
+            </tr>
+            <tr>
+              <td>20:00</td>
+              <td>MS</td>
+              <td>Corendon Alanyaspor</td>
+              <td id="sonuc">1 - 1</td>
+              <td>Bitexen Antalyaspor</td>
+              <td>1 - 0</td>
+            </tr>
+            <tr>
+              <td
+                colspan="7"
+                style="
+                  background-color: #272727;
+                  color: white;
+                  font-weight: bold;
+                "
+              >
+                25 Mayıs 2024 - Cumartesi
+              </td>
+            </tr>
+            <tr>
+              <td>16:00</td>
+              <td>MS</td>
+              <td class="yenen">VavaCars Fatih Karagümrük</td>
+              <td id="sonuc">3 - 1</td>
+              <td>Yılport Samsunspor</td>
+              <td>1 - 0</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td class="yenen">EMS Yapı Sivasspor</td>
+              <td id="sonuc">2 - 1</td>
+              <td>Mondihome Kayserispor</td>
+              <td>1 - 1</td>
+            </tr>
+            <tr>
+              <td
+                colspan="7"
+                style="
+                  background-color: #272727;
+                  color: white;
+                  font-weight: bold;
+                "
+              >
+                26 Mayıs 2024 - Pazar
+              </td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td class="yenen">Fenerbahçe</td>
+              <td id="sonuc">6 - 0</td>
+              <td>İstanbulspor</td>
+              <td>3 - 0</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>Tümosan Konyaspor</td>
+              <td id="sonuc">1 - 3</td>
+              <td class="yenen">Galatasaray</td>
+              <td>0 - 1</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>Siltaş Yapı Pendikspor</td>
+              <td id="sonuc">0 - 1</td>
+              <td class="yenen">Gaziantep FK</td>
+              <td>0 - 1</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td>Yukatel Adana Demirspor</td>
+              <td id="sonuc">2 - 6</td>
+              <td class="yenen">Rams Başakşehir</td>
+              <td>1 - 4</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td class="yenen">Kasımpaşa</td>
+              <td id="sonuc">2 - 1</td>
+              <td>Beşiktaş</td>
+              <td>1 - 0</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td class="yenen">Trabzonspor</td>
+              <td id="sonuc">4 - 2</td>
+              <td>MKE Ankaragücü</td>
+              <td>0 - 1</td>
+            </tr>
+            <tr>
+              <td>19:00</td>
+              <td>MS</td>
+              <td class="yenen">Atakaş Hatayspor</td>
+              <td id="sonuc">2 - 0</td>
+              <td>Çaykur Rizespor</td>
+              <td>1 - 0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer" style="width: 100%">
+        <h4 style="color: #5b5b5b">
+          &copy;Tüm Telif Hakları
+          <a
+            style="color: #ea1538; opacity: 0.3; text-decoration: none"
+            href="#"
+            >Emircan Canoğlu & Bedirhan Boti Söylemez</a
+          >'de Saklıdır.
+        </h4>
+      </div>
+    </div>
+  </body>
+</html>

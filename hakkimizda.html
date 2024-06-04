@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="hakkimizda.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .hero {
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(./images/arkaPlan.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .title {
+        color: white;
+        font-size: 28px;
+      }
+      span {
+        color: #ea1538;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        padding: 27px 70px;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+      }
+      ul li {
+        margin: 5px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      ul li a:hover {
+        color: #ea1538;
+        transition: 0.6s ease;
+      }
+      body {
+        overflow: hidden;
+      }
+      .container {
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+      }
+
+      .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        height: 5vh;
+        padding-bottom: 7px;
+      }
+      #tik {
+        color: #ea1538;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <h2 class="title">
+          <a href="index.html" style="text-decoration: none; color: white"
+            >Altın <span>GOL</span></a
+          >
+        </h2>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="puanDurumu.html">Puan Durumu</a></li>
+          <li><a href="canliSonuc.html">Canlı Sonuçlar</a></li>
+          <li><a href="hakkimizda.html" id="tik">Hakkımızda</a></li>
+        </ul>
+        <a href="index.html">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+        </a>
+      </nav>
+      <div class="container">
+        <div class="kart">
+          <img src="./images/boti (1).jpg" alt="Resim" />
+          <h2 style="margin-bottom: 5px">Bedirhan Boti Söylemez</h2>
+          <p><b>230120979</b></p>
+        </div>
+        <div class="kart">
+          <img src="./images/bedi (1).jpg" alt="Resim" />
+          <h2 style="margin-bottom: 5px">Emircan Canoğlu</h2>
+          <p><b>230120179</b></p>
+        </div>
+      </div>
+      <div class="footer" style="width: 100%">
+        <div class="host">
+          <!-- href="" -> Tırnak içine host linkini ekle yada HOST LİNKİ yazısının yanına host linkini ekle ya da her ikisine de ekle. -->
+          <span
+            href="#"
+            style="
+              color: white;
+              opacity: 0.5;
+              font-size: 20px;
+              text-decoration: none;
+            "
+            >HOST LİNKİ :
+            <a
+              href="#"
+              style="color: #ea1538; font-size: 20px; text-decoration: none"
+              >www.hostlinki.com</a
+            >
+          </span>
+        </div>
+        <h4 style="color: #5b5b5b">
+          &copy;Tüm Telif Hakları
+          <a
+            style="color: #ea1538; opacity: 0.3; text-decoration: none"
+            href="#"
+            >Emircan Canoğlu & Bedirhan Boti Söylemez</a
+          >'de Saklıdır.
+        </h4>
+      </div>
+    </div>
+  </body>
+</html>

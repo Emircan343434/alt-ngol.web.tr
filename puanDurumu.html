@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puan Durumu</title>
+    <link rel="stylesheet" href="puanDurumu.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .hero {
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(./images/arkaPlan.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .title {
+        color: white;
+        font-size: 28px;
+      }
+      span {
+        color: #ea1538;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        padding: 27px 70px;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+      }
+      ul li {
+        margin: 5px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      ul li a:hover {
+        color: #ea1538;
+        transition: 0.6s ease;
+      }
+      body {
+        overflow: hidden;
+      }
+      .container {
+        height: 85vh;
+        padding: 5px 50px 5px 50px;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+      }
+      .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        height: 5vh;
+        padding-bottom: 7px;
+      }
+      #tik {
+        color: #ea1538;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <h2 class="title">
+          <a href="index.html" style="text-decoration: none; color: white"
+            >Altın <span>GOL</span></a
+          >
+        </h2>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="puanDurumu.html" id="tik">Puan Durumu</a></li>
+          <li><a href="canliSonuc.html">Canlı Sonuçlar</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+        <a href="index.html">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+        </a>
+      </nav>
+      <div class="container">
+        <div
+          class=""
+          style="background-color: #272727; position: fixed; z-index: 999"
+        >
+          <h1 style="padding: 5px 250px">
+            2023 / 2024 - Süper Lig Puan Durumu
+          </h1>
+        </div>
+        <table style="margin-top: 47px">
+          <thead>
+            <tr>
+              <th>S</th>
+              <th>Takım</th>
+              <th>O</th>
+              <th>G</th>
+              <th>B</th>
+              <th>M</th>
+              <th>AG</th>
+              <th>YG</th>
+              <th>A</th>
+              <th>P</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Galatasaray</td>
+              <td>38</td>
+              <td>33</td>
+              <td>3</td>
+              <td>2</td>
+              <td>92</td>
+              <td>26</td>
+              <td>66</td>
+              <td>102</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Fenerbahçe</td>
+              <td>38</td>
+              <td>31</td>
+              <td>6</td>
+              <td>1</td>
+              <td>99</td>
+              <td>31</td>
+              <td>68</td>
+              <td>99</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Trabzonspor</td>
+              <td>38</td>
+              <td>21</td>
+              <td>4</td>
+              <td>13</td>
+              <td>69</td>
+              <td>50</td>
+              <td>19</td>
+              <td>67</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Başakşehir</td>
+              <td>38</td>
+              <td>18</td>
+              <td>7</td>
+              <td>13</td>
+              <td>57</td>
+              <td>43</td>
+              <td>14</td>
+              <td>61</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Kasımpaşa</td>
+              <td>38</td>
+              <td>16</td>
+              <td>8</td>
+              <td>14</td>
+              <td>62</td>
+              <td>65</td>
+              <td>-3</td>
+              <td>56</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Beşiktaş</td>
+              <td>38</td>
+              <td>16</td>
+              <td>8</td>
+              <td>14</td>
+              <td>52</td>
+              <td>47</td>
+              <td>5</td>
+              <td>56</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Sivasspor</td>
+              <td>38</td>
+              <td>14</td>
+              <td>12</td>
+              <td>12</td>
+              <td>47</td>
+              <td>54</td>
+              <td>-7</td>
+              <td>54</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Alanyaspor</td>
+              <td>38</td>
+              <td>12</td>
+              <td>16</td>
+              <td>10</td>
+              <td>53</td>
+              <td>50</td>
+              <td>3</td>
+              <td>52</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Rizespor</td>
+              <td>38</td>
+              <td>14</td>
+              <td>8</td>
+              <td>16</td>
+              <td>48</td>
+              <td>58</td>
+              <td>-10</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Antalyaspor</td>
+              <td>38</td>
+              <td>12</td>
+              <td>13</td>
+              <td>13</td>
+              <td>44</td>
+              <td>49</td>
+              <td>-5</td>
+              <td>49</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Gaziantep FK</td>
+              <td>38</td>
+              <td>12</td>
+              <td>8</td>
+              <td>18</td>
+              <td>50</td>
+              <td>57</td>
+              <td>-7</td>
+              <td>44</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Adana Demirspor</td>
+              <td>38</td>
+              <td>10</td>
+              <td>14</td>
+              <td>14</td>
+              <td>54</td>
+              <td>61</td>
+              <td>-7</td>
+              <td>44</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Samsunspor</td>
+              <td>38</td>
+              <td>11</td>
+              <td>10</td>
+              <td>17</td>
+              <td>42</td>
+              <td>52</td>
+              <td>-10</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Kayserispor</td>
+              <td>38</td>
+              <td>11</td>
+              <td>12</td>
+              <td>15</td>
+              <td>44</td>
+              <td>57</td>
+              <td>-13</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>Hatayspor</td>
+              <td>38</td>
+              <td>9</td>
+              <td>14</td>
+              <td>15</td>
+              <td>45</td>
+              <td>52</td>
+              <td>-7</td>
+              <td>41</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Konyaspor</td>
+              <td>38</td>
+              <td>9</td>
+              <td>14</td>
+              <td>15</td>
+              <td>40</td>
+              <td>53</td>
+              <td>-13</td>
+              <td>41</td>
+            </tr>
+            <tr>
+              <td>17</td>
+              <td>Ankaragücü</td>
+              <td>38</td>
+              <td>8</td>
+              <td>16</td>
+              <td>14</td>
+              <td>46</td>
+              <td>52</td>
+              <td>-6</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Karagümrük</td>
+              <td>38</td>
+              <td>10</td>
+              <td>10</td>
+              <td>18</td>
+              <td>49</td>
+              <td>52</td>
+              <td>-3</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Pendikspor</td>
+              <td>38</td>
+              <td>9</td>
+              <td>10</td>
+              <td>19</td>
+              <td>42</td>
+              <td>73</td>
+              <td>-31</td>
+              <td>37</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>İstanbulspor</td>
+              <td>38</td>
+              <td>4</td>
+              <td>7</td>
+              <td>27</td>
+              <td>27</td>
+              <td>80</td>
+              <td>-53</td>
+              <td>16</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer" style="width: 100%">
+        <h4 style="color: #5b5b5b">
+          &copy;Tüm Telif Hakları
+          <a
+            style="color: #ea1538; opacity: 0.3; text-decoration: none"
+            href="#"
+            >Emircan Canoğlu & Bedirhan Boti Söylemez</a
+          >'de Saklıdır.
+        </h4>
+      </div>
+    </div>
+  </body>
+</html>

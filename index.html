@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .hero {
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(./images/arkaPlan.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .title {
+        color: white;
+        font-size: 28px;
+      }
+      span {
+        color: #ea1538;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        padding: 27px 70px;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin-right: 100px;
+      }
+      ul li {
+        margin: 5px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      ul li a:hover {
+        color: #ea1538;
+        transition: 0.6s ease;
+      }
+      body {
+        overflow: hidden;
+      }
+      .container {
+        display: flex;
+        height: 60vh;
+        gap: 153px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 100px;
+      }
+      .button1 {
+        position: relative;
+        padding: 75px;
+        background-color: rgb(44, 44, 44);
+        color: #ea1538;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 2px;
+        transition: 0.5s ease;
+        clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+      }
+      .button1:hover {
+        background-color: rgb(66, 66, 66);
+        color: #ffffff;
+        letter-spacing: 5px;
+      }
+      .button2 {
+        position: relative;
+        padding: 75px;
+        background-color: rgb(44, 44, 44);
+        color: #ea1538;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 2px;
+        transition: 0.5s ease;
+        clip-path: polygon(
+          100% 0%,
+          90% 50%,
+          100% 100%,
+          10% 100%,
+          0% 50%,
+          10% 0
+        );
+      }
+      .button2:hover {
+        background-color: rgb(66, 66, 66);
+        color: white;
+        letter-spacing: 5px;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        height: 30vh;
+        padding-bottom: 7px;
+      }
+      #tik {
+        color: #ea1538;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <h2 class="title">
+          <a href="index.html" style="text-decoration: none; color: white"
+            >Altın <span>GOL</span></a
+          >
+        </h2>
+        <ul>
+          <li><a href="index.html" id="tik">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+        <a href="index.html">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+        </a>
+      </nav>
+      <div class="container">
+        <div class="birDiv">
+          <a class="button2" href="puanDurumu.html">puan durumu</a>
+        </div>
+        <div class="ikiDiv">
+          <a class="button1" href="canliSonuc.html">canlı sonuçlar</a>
+        </div>
+      </div>
+      <div class="footer" style="width: 100%">
+        <h4 style="color: #5b5b5b">
+          &copy;Tüm Telif Hakları
+          <a
+            style="color: #ea1538; opacity: 0.3; text-decoration: none"
+            href="#"
+            >Emircan Canoğlu & Bedirhan Boti Söylemez</a
+          >'de Saklıdır.
+        </h4>
+      </div>
+    </div>
+  </body>
+</html>
